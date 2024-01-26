@@ -1,0 +1,45 @@
+
+/* =============custom cursor features style open============= */
+
+
+*{
+	padding: 0;
+	margin: 0;
+	box-sizing: border-box;
+}
+
+body{
+	height: 100%;
+	width: 100%;
+}
+
+.main{
+	background-color: #300;
+	color: rgb(210, 232, 252);
+	font-size: 4rem;
+	display: flex;
+	align-items: center;
+	justify-content: center;
+	height: 100vh;
+}
+
+.cursor{
+	position: absolute;
+	height: 40px;
+	width: 40px;
+	border-radius: 50%;
+	background-color: rgb(245, 247, 248);
+	mix-blend-mode: difference;
+	transition: all linear 0.3s;
+	
+}
+h1{
+	transition: all ease 0.4s;
+}
+
+h1:hover{
+	color: rgb(116, 65, 65);
+}
+
+/* =============custom cursor features style close============= */
+

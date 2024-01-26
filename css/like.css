@@ -1,0 +1,44 @@
+
+
+/* Insta love/like button features============ open */
+
+
+body{
+	display: flex;
+	align-items: center;
+	justify-content: center;
+	background-color: cadetblue;
+	width: 100%;
+	height: 100vh;
+}
+#container{
+height: 490px;
+width: 350px;
+background-color: aliceblue;
+border-radius: 9px;
+
+
+}
+#container img{
+object-fit: cover;
+background-position: center;
+height: 490px;
+width: 350px;
+border-radius: 9px;
+}
+
+#container i{
+font-size: 60px;
+color: #fff;
+transform: translate(50% - 50%), scale(0);
+position: absolute;
+top: 50%;
+left: 50%;
+transition: transform ease 0.5s;
+opacity: 0;
+}
+
+
+/* Insta love/like button features============ close */
+
+

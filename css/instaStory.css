@@ -1,0 +1,206 @@
+
+		* {
+			padding: 0;
+			margin: 0;
+			box-sizing: border-box;
+
+		}
+
+		body {
+			height: 100vh;
+			width: 100%;
+			background-color: #089;
+			display: flex;
+			align-items: center;
+			justify-content: center;
+			font-family: 'Roboto Mono', monospace;
+		}
+
+		.card {
+			height: 555px;
+			width: 399px;
+			background-color: #333;
+			border-radius: 9px;
+			position: relative;
+			overflow-y:auto ;
+			border: 2px solid #333;
+		}
+
+		.card::-webkit-scrollbar{
+			display: none;
+		}
+
+		.mobile {
+			height: 120px;
+			width: 100%;
+			border-bottom: 1px solid #089;
+			padding: 20px;
+			white-space: nowrap;
+			overflow-x: auto;
+			padding-left: 7px;
+			margin-bottom: 2rem;
+
+		}
+
+		.mobile::-webkit-scrollbar {
+			display: none;
+		}
+
+
+		.story {
+			height: 80px;
+			width: 80px;
+			border-radius: 50%;
+			background: linear-gradient(rgb(255, 30, 0), orange, rgb(2, 31, 85), rgb(255, 47, 82), purple);
+			display: inline-block;
+			padding: 5px;
+			overflow: hidden;
+			margin-right: 9px;
+
+
+		}
+
+		#full-screen {
+			height: 100%;
+			width: 100%;
+			position: absolute;
+			background-position: center;
+			background-size: cover;
+			display: none;
+		}
+
+		.story img {
+			object-fit: cover;
+			object-position: center;
+			height: 70px;
+			width: 70px;
+			border-radius: 50%;
+		}
+
+
+		.container {
+			height: 250px;
+			width: 100%;
+			border-radius: 9px;
+			margin-bottom: 1rem;
+		}
+
+		.container img {
+			object-fit: cover;
+			object-position: center;
+			height: 250px;
+			width: 100%;
+			border-radius: 9px;
+
+		}
+
+		.container i {
+			font-size: 60px;
+			color: #fff;
+			transform: translate(50% - 50%), scale(0);
+			position: absolute;
+			top: 50%;
+			left: 50%;
+			transition: transform ease 0.5s;
+			opacity: 0;
+		}
+
+		.icon {
+			color: aliceblue;
+			margin: 9px;
+			font-size: 1.5rem;
+			cursor: pointer;
+		}
+
+		#user {
+			height: 35px;
+			width: 35px;
+			border-radius: 50%;
+			margin-left: 8px;
+			object-fit: cover;
+			object-position: center;
+		}
+
+		.box {
+			display: flex;
+			align-items: center;
+			justify-content: space-between;
+			height: 45px;
+			margin-bottom: 0.5rem;
+			margin-top: 1rem;
+		}
+
+
+		.imgbox {
+			display: flex;
+			align-items: center;
+			justify-content: flex-start;
+
+		}
+
+		h4 {
+			margin-left: 6px;
+			color: #fff;
+			font-size: 0.9rem;
+
+		}
+
+		button{
+			margin-right: 1rem;
+			padding: 5px 11px;
+			font-size: 14px;
+			font-weight: 600;
+			border-radius: 5px;
+			border: none;
+			outline: none;
+			cursor:pointer;
+			
+		}
+
+
+		
+		#frnd-card {
+			background-color: #333;
+			width: 320px;
+			height: 340px;
+			padding: 10px;
+			border-radius: 8px;
+			text-align: center;
+			border: 2px solid #089;
+			margin: 2rem;
+
+		}
+
+		img {
+			height: 180px;
+			width: 180px;
+			object-fit: cover;
+			background-position: center;
+			border-radius: 50%;
+
+		}
+
+		h1 {
+			margin:0.4rem;
+			font-size: 18px;
+			color: #fff;
+		}
+
+		h5 {
+			margin: 0.9rem;
+			font-size: 1rem;
+			color: red;
+		}
+
+		#add {
+			margin: 1rem;
+			padding: 0.5rem 1rem;
+			border-radius: 8px;
+			border: none;
+			outline: none;
+			background-color: #3585a5;
+			font-size: 1rem;
+			color: #fff;
+			
+
+		}

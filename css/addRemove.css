@@ -1,0 +1,62 @@
+/* add remove button  style  open */
+
+
+* {
+	padding: 0;
+	margin: 0;
+	box-sizing: border-box;
+}
+
+body {
+	display: flex;
+	align-items: center;
+	justify-content: center;
+	background-color: cornflowerblue;
+	height: 100vh;
+	width: 100%;
+}
+
+#card {
+	background-color: aliceblue;
+	width: 300px;
+	height: 450px;
+	padding: 20px;
+	border-radius: 8px;
+	text-align: center;
+
+}
+
+img {
+	height: 60%;
+	width: 260px;
+	object-fit: cover;
+	background-position: center;
+	border-radius: 8px;
+
+}
+
+h1 {
+	margin: 1rem;
+}
+
+h5 {
+	margin: 0.9rem;
+	font-size: 1.5rem;
+	color: red;
+}
+
+button {
+	margin: 0.7rem;
+	padding: 0.5rem 1rem;
+	border-radius: 8px;
+	border: none;
+	outline: none;
+	background-color: #d4a4a4;
+	font-size: 1rem;
+	color: #fff;
+
+}
+
+
+
+/* add remove button  style  close====================*/

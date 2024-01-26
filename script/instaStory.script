@@ -1,0 +1,109 @@
+
+
+		var arr = [{ dp: "https://images.unsplash.com/photo-1441014089449-6425719b1ed7?ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D&auto=format&fit=crop&w=1374&q=80", story: "https://images.unsplash.com/photo-1613801185035-7931220539aa?ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxjb2xsZWN0aW9uLXBhZ2V8MXwxNDIxODQxNHx8ZW58MHx8fHx8&auto=format&fit=crop&w=500&q=60" },
+		{ dp: "https://images.unsplash.com/photo-1554766492-2d243e932276?ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxjb2xsZWN0aW9uLXBhZ2V8NHwxNDIxODQxNHx8ZW58MHx8fHx8&auto=format&fit=crop&w=800&q=60", story: "https://images.unsplash.com/photo-1617824543460-3355ae8e5781?ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxjb2xsZWN0aW9uLXBhZ2V8NnwxNDIxODQxNHx8ZW58MHx8fHx8&auto=format&fit=crop&w=800&q=60" },
+		{ dp: "https://images.unsplash.com/photo-1669900000301-415f4b7f47a7?ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxjb2xsZWN0aW9uLXBhZ2V8N3wxNDIxODQxNHx8ZW58MHx8fHx8&auto=format&fit=crop&w=800&q=60", story: "https://images.unsplash.com/photo-1445299370299-fba06c02df22?ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxjb2xsZWN0aW9uLXBhZ2V8OXwxMTk0fHxlbnwwfHx8fHw%3D&auto=format&fit=crop&w=800&q=60" },
+		{ dp: "https://images.unsplash.com/photo-1480623826718-27e89ac63a4f?ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxjb2xsZWN0aW9uLXBhZ2V8N3wxNDE3NDV8fGVufDB8fHx8fA%3D%3D&auto=format&fit=crop&w=500&q=60", story: "https://images.unsplash.com/photo-1440288736878-766bd5839edb?ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxjb2xsZWN0aW9uLXBhZ2V8MTl8MTQxNzQ1fHxlbnwwfHx8fHw%3D&auto=format&fit=crop&w=800&q=60" },
+		{ dp: "https://images.unsplash.com/photo-1576023614350-2f4174f217f5?ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxjb2xsZWN0aW9uLXBhZ2V8NDZ8MTQxNzQ1fHxlbnwwfHx8fHw%3D&auto=format&fit=crop&w=500&q=60", story: "https://images.unsplash.com/photo-1569448634976-730d30dccaa7?ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxjb2xsZWN0aW9uLXBhZ2V8NjJ8MTQxNzQ1fHxlbnwwfHx8fHw%3D&auto=format&fit=crop&w=500&q=60" },
+		{ dp: "https://images.unsplash.com/photo-1575084713138-342cae5f8d00?ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxjb2xsZWN0aW9uLXBhZ2V8NTd8MTQxNzQ1fHxlbnwwfHx8fHw%3D&auto=format&fit=crop&w=800&q=60", story: "https://images.unsplash.com/photo-1508138221679-760a23a2285b?ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxzZWFyY2h8Nnx8cmFuZG9tfGVufDB8fDB8fHww&auto=format&fit=crop&w=800&q=60" },
+		{ dp: "https://images.unsplash.com/photo-1518895949257-7621c3c786d7?ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxzZWFyY2h8OXx8cmFuZG9tfGVufDB8fDB8fHww&auto=format&fit=crop&w=800&q=60", story: "https://images.unsplash.com/photo-1544194215-541c2d3561a4?ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1yZWxhdGVkfDZ8fHxlbnwwfHx8fHw%3D&auto=format&fit=crop&w=500&q=60" },
+		{ dp: "https://plus.unsplash.com/premium_photo-1674068281216-c6213c9a6043?ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1yZWxhdGVkfDh8fHxlbnwwfHx8fHw%3D&auto=format&fit=crop&w=500&q=60", story: "https://images.unsplash.com/photo-1503135935062-b7d1f5a0690f?ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1yZWxhdGVkfDIwfHx8ZW58MHx8fHx8&auto=format&fit=crop&w=500&q=60" },
+		{ dp: "https://images.unsplash.com/photo-1502732728614-8329a1bf1415?ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1yZWxhdGVkfDV8fHxlbnwwfHx8fHw%3D&auto=format&fit=crop&w=500&q=60", story: "https://images.unsplash.com/photo-1626908015910-806e147f74a7?ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1yZWxhdGVkfDl8fHxlbnwwfHx8fHw%3D&auto=format&fit=crop&w=500&q=60", }
+		]
+
+		var clutter = ""
+		var mobile = document.querySelector(".mobile");
+		arr.forEach(function (elem, idx) {
+			clutter += `<div class="story">
+				<img id="${idx}" src="${elem.dp}" alt="">
+			</div>`
+
+		});
+		mobile.innerHTML = clutter;
+		mobile.addEventListener("click", function (dets) {
+			document.querySelector("#full-screen").style.display = "block"
+			document.querySelector("#full-screen").style.backgroundImage = `url(${arr[dets.target.id].story})`
+
+			
+			setTimeout(function () {
+				document.querySelector("#full-screen").style.display = "none";
+				console.log("heloo")
+			}, 3000);
+
+		});
+ 
+		var box = document.querySelector(".container");
+		var like = document.querySelector("i");
+		var icon = document.querySelector("#icon-1");
+		var btn = document.querySelector("button");
+
+		box.addEventListener("dblclick", () =>{
+			like.style.transform = "translate(50% - 50%), scale(1)";
+			like.style.opacity = "0.7";
+			
+			
+
+			setTimeout(() => {
+				like.style.opacity = "0";
+			}, 1000);
+
+			setTimeout(() => {
+				like.style.transform =  "translate(50% - 50%), scale(0)";
+			}, 3000);
+
+			console.log("hello")
+		})
+
+
+		var check = 0;
+		icon.addEventListener("click", function(){
+			if(check == 0){
+				icon.style.color = "red"
+				check = 1;
+			}else{
+				icon.style.color = "white";
+				check = 0;
+			}
+			console.log(check)
+		});
+
+			var follow = 0
+		btn.addEventListener("click", ()=>{
+			if (follow == 0){
+				btn.style.backgroundColor = "dodgerblue"
+				btn.style.color = "white"
+				btn.innerHTML = "Following";
+				follow = 1
+			}else{
+				btn.style.backgroundColor = "white"
+				btn.style.color = "#000"
+				btn.innerHTML = "Follow";
+				follow = 0
+			}
+		})
+
+		// follow
+
+		var head = document.querySelector("h5");
+		var add = document.querySelector("#add");
+
+		var check = 0;
+
+		add.addEventListener("click", function () {
+			if (check == 0) {
+				head.innerHTML = "Friends";
+				head.style.color = "green";
+				add.innerHTML = "Remove Friend";
+				check = 1;
+			} else {
+				head.innerHTML = "Stranger";
+				head.style.color = "red";
+				add.innerHTML = "Add Friend";
+
+				check = 0;
+			}
+		})
+
+
+		
+		
